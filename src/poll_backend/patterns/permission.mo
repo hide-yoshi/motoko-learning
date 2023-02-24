@@ -8,7 +8,7 @@ actor Self {
     };
 
     public func assert_owner() {
-        if is_owner () { throw Error.reject("") };
+        if (await is_owner()) { throw Error.reject("") };
 
     };
 };
