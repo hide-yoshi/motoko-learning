@@ -1,8 +1,10 @@
 import RBTree "mo:base/RBTree";
 import Nat "mo:base/Nat";
 import Iter "mo:base/Iter";
+import Text "mo:base/Text";
 actor {
   var question : Text = "enter your question";
+
   var options : RBTree.RBTree<Nat, Text> = RBTree.RBTree(Nat.compare);
   // new variable `optionCounter` to store value of the next option id
   var optionCounter = 0;
