@@ -1,9 +1,14 @@
 import Int "mo:base/Int";
 import Iter "mo:base/Iter";
-actor {
+import Debug "mo:base/Debug";
+import Array "mo:base/Array";
+module {
+    let collection : [Text] = ["This", "is", "a", "test"];
 
-    func next(a : Int, b : Int) : Int {
-        a +b;
+    public func print() {
+        for (index in collection.keys()) {
+            Debug.print(collection[index]);
+        };
     };
 
 };
